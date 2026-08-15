@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="form-card">
+            <h2>Create Your Profile</h2>
+            <input type="text" placeholder="Enter the Name" id="Name">
+            <input type="file" accept="image/*" id="source">
+            <input type="text" placeholder="Enter your bio" id="bio">
+            <button onclick="updateBio()"><b>Submit</b></button>
+        </div>
+
+        <div class="profile-card">
+            <img src="data:image/jpeg;base64,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" alt="" id="src">
+            <h1 id="h1">Name</h1>
+            <h2 id="h2">Bio</h2>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 50% 100%, rgba(255, 100, 30, 0.55), transparent 60%),
+        #0a0a0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 60px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* ---- Form Card ---- */
+
+.form-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    padding: 40px;
+    flex: 1 1 400px;
+    max-width: 420px;
+    text-align: center;
+}
+
+.form-card h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #ff6432;
+    font-size: 20px;
+}
+
+input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #f7f7fb;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #ff6432;
+    box-shadow: 0 0 0 3px rgba(255, 100, 50, 0.15);
+}
+
+/* File upload input styling */
+input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 13px;
+    background: #f7f7fb;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #ff8a3d, #ff5b30);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.15s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* ---- Profile Card ---- */
+
+.profile-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    padding: 40px;
+    flex: 1 1 400px;
+    max-width: 420px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
+}
+
+.profile-card img {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ff6432;
+    margin-bottom: 20px;
+    background: #eee;
+}
+
+#h1 {
+    margin: 0 0 12px;
+    font-size: 28px;
+    color: #222;
+}
+
+#h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    color: #666;
+    line-height: 1.6;
+}
